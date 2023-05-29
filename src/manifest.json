@@ -1,0 +1,23 @@
+{
+  "name": "Thanos web",
+  "version": "1.0.0",
+  "description": "Avengers charcter on web",
+  "manifest_version": 3,
+  "author": "Saravana Sai",
+  "action": {
+    "icons": {
+        "16": "./assets/logo.png",
+        "32": "./assets/logo.png",
+        "48": "./assets/logo.png",
+        "128": "./assets/logo.png"
+      },
+    "default_popup": "index.html",
+    "default_title": "Thanos"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*/*"],
+      "js": ["js/content.js"]
+    }
+  ]
+}
